@@ -40,13 +40,6 @@ var jqyoui = angular.module('ngDragDrop', []).service('ngDragDropService', ['$ti
     this.draggableScope = null;
     this.droppableScope = null;
 
-    console.log('jqyoui!');
-    console.log('jqyoui!');
-    console.log('jqyoui!');
-    console.log('jqyoui!');
-    console.log('jqyoui!');
-    
-
     $('head').prepend('<style type="text/css">@charset "UTF-8";.angular-dragdrop-hide{display: none !important;}</style>');
 
     this.callEventCallback = function (scope, callbackName, event, ui) {
