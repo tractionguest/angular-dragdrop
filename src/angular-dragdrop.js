@@ -1,3 +1,9 @@
+import $ from 'jquery';
+
+require('jquery-ui');
+require('jquery-ui/ui/widgets/draggable');
+require('jquery-ui/ui/widgets/droppable');
+
 /**
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
@@ -33,6 +39,13 @@
 var jqyoui = angular.module('ngDragDrop', []).service('ngDragDropService', ['$timeout', '$parse', '$q', function($timeout, $parse, $q) {
     this.draggableScope = null;
     this.droppableScope = null;
+
+    console.log('jqyoui!');
+    console.log('jqyoui!');
+    console.log('jqyoui!');
+    console.log('jqyoui!');
+    console.log('jqyoui!');
+    
 
     $('head').prepend('<style type="text/css">@charset "UTF-8";.angular-dragdrop-hide{display: none !important;}</style>');
 
